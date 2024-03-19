@@ -1,0 +1,27 @@
+
+{
+    "admin": [
+        {
+            "username": "Starboy",
+            "password": "Oluwafemi"
+        }
+    ],
+    "regularUser": [
+        {
+            "username": "Tomford",
+            "password": "WahalaDey"
+        },
+        {
+            "username": "Scofield",
+            "password": "Shakara"
+        },
+        {
+            "username": "Micheal",
+            "password": "JollofRice"
+        },
+        {
+            "username": "chidi",
+            "password": "Ogbonge"
+        }
+    ]
+}

@@ -8,13 +8,14 @@
 import express from 'express'
 import logger from './middleware/logger.js'
 import authorRouter from './routes/author.js'
-import { authenticate } from './middleware/authenticate.js'
-// initialize instnce of express
+import { authenticate, isAdmin } from './middleware/authenticate.js'
+
+// initialize instance of express
 const app = express()
 
 // get express to use middlewares
 app.use(express.json())
-app.use(logger, authorRouter)
+app.use(logger, authenticate, isAdmin,authorRouter)
 
 // bind important variables to express instance
 app.set('port', process.env.PORT || 3000)

@@ -37,20 +37,22 @@ authorRouter.get('/authors/:id', async (req, res) => {
 })
 
 // route to add a new author
-authorRouter.post('/authors', isAdmin, (req, res) => {
+authorRouter.post('/authors', (req, res) => {
   // use then and catch to handle promise
   readDB().then((data) => {
     console.log(typeof data)
     const authors = JSON.parse(data)
     const newAuthor = req.body
-    /* example/format of newAuthor passed to body as JSON: {
+    /* example/format of newAuthor passed to body as JSON:
+     {
     "authorID": "rrn",
     "authorName": "Rick Riordan",
     "books": [
         "Percy Jackson Book Series",
         "The Kane Chronicles"
     ]
-} */
+}
+ */
 
     authors.push(newAuthor)
     writeDB(authors)
@@ -62,14 +64,17 @@ authorRouter.post('/authors', isAdmin, (req, res) => {
 })
 
 // route to update an author book titles
-authorRouter.put('/authors/:id', isAdmin, async (req, res) => {
+authorRouter.put('/authors/:id', async (req, res) => {
   // add new book(s) to existing author
-  /* example/format of newBook passed to body as JSON: {
+  /* example/format of newBook passed to body as JSON: 
+
+  {
     "newBooksArray": [
         "Defiant",
         "Cytonic"
     ]
-} */
+} 
+*/
   try {
     const authorDB = JSON.parse(await readDB())
     console.log(typeof authorDB)
@@ -90,7 +95,7 @@ authorRouter.put('/authors/:id', isAdmin, async (req, res) => {
 
 
 // route to delete an author
-authorRouter.delete('/authors/:id', isAdmin, async (req, res) => {
+authorRouter.delete('/authors/:id', async (req, res) => {
   try {
     const authorDB = JSON.parse(await readDB())
     const authorId = req.params.id

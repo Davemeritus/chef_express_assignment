@@ -1,47 +1,35 @@
 [
-    {
-        "authorID": "agc",
-        "authorName": "Agatha Christie",
-        "books": [
-            "Murder on the Orient Express",
-            "The Murder of Roger Ackroyd",
-            "And Then There Were None"
-        ]
-    },
-    {
-        "authorID": "sd",
-        "authorName": "Stieg Larsson",
-        "books": [
-            "The Girl with the Dragon Tattoo",
-            "The Girl Who Played with Fire",
-            "The Girl Who Kicked the Hornets' Nest"
-        ]
-    },
-    {
-        "authorID": "jl",
-        "authorName": "James Ellroy",
-        "books": [
-            "L.A. Confidential",
-            "The Black Dahlia",
-            "The Big Nowhere"
-        ]
-    },
-    {
-        "authorID": "mh",
-        "authorName": "Michael Connelly",
-        "books": [
-            "The Lincoln Lawyer",
-            "The Black Echo",
-            "The Poet"
-        ]
-    },
-    {
-        "authorID": "pdj",
-        "authorName": "Patricia Cornwell",
-        "books": [
-            "Postmortem",
-            "The Body Farm",
-            "Cruel and Unusual"
-        ]
-    }
+  {
+    "authorID": "agc",
+    "authorName": "Agatha Christie",
+    "books": [
+      "Murder on the Orient Express",
+      "The Murder of Roger Ackroyd",
+      "And Then There Were None"
+    ]
+  },
+  {
+    "authorID": "sd",
+    "authorName": "Stieg Larsson",
+    "books": [
+      "The Girl with the Dragon Tattoo",
+      "The Girl Who Played with Fire",
+      "The Girl Who Kicked the Hornets' Nest"
+    ]
+  },
+  {
+    "authorID": "jl",
+    "authorName": "James Ellroy",
+    "books": ["L.A. Confidential", "The Black Dahlia", "The Big Nowhere"]
+  },
+  {
+    "authorID": "mh",
+    "authorName": "Michael Connelly",
+    "books": ["The Lincoln Lawyer", "The Black Echo", "The Poet"]
+  },
+  {
+    "authorID": "pdj",
+    "authorName": "Patricia Cornwell",
+    "books": ["Postmortem", "The Body Farm", "Cruel and Unusual"]
+  }
 ]
